@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_67a3aa11dbdd258560a6bf9762daacf4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_67a3aa11dbdd258560a6bf9762daacf4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_67a3aa11dbdd258560a6bf9762daacf4 = L.map(
+                "map_67a3aa11dbdd258560a6bf9762daacf4",
+                {
+                    center: [1.3053214796692045, 103.77394893780034],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2fc165d52dbf6f0d451b15e0567eb4d1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2fc165d52dbf6f0d451b15e0567eb4d1.addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var marker_3c6bb37800c4c4d2225d38c266344372 = L.marker(
+                [1.3053214796692045, 103.77394893780034],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_488c18edb21c0615f69dd1f465313766 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c6bb37800c4c4d2225d38c266344372.setIcon(icon_488c18edb21c0615f69dd1f465313766);
+        
+    
+        var popup_d07c82c0eb32d6f594edd28291669ad0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a79b59332b2fc845afb77bf81e535a81 = $(`<div id="html_a79b59332b2fc845afb77bf81e535a81" style="width: 100.0%; height: 100.0%;">Destination</div>`)[0];
+                popup_d07c82c0eb32d6f594edd28291669ad0.setContent(html_a79b59332b2fc845afb77bf81e535a81);
+            
+        
+
+        marker_3c6bb37800c4c4d2225d38c266344372.bindPopup(popup_d07c82c0eb32d6f594edd28291669ad0)
+        ;
+
+        
+    
+    
+            var marker_3b476823d1de4668955b18f3ba42b377 = L.marker(
+                [1.3045594379669765, 103.76685761800195],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_6bb3b1f1db563dc9c6573dd7c30815e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b476823d1de4668955b18f3ba42b377.setIcon(icon_6bb3b1f1db563dc9c6573dd7c30815e7);
+        
+    
+        var popup_e6a751b1de57e439fb01d4a9dad0dcd3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39fb0d04039afd77d8e2f2be1fd1df02 = $(`<div id="html_39fb0d04039afd77d8e2f2be1fd1df02" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> C33<br><b>Address:</b> BLK 601-613 CLEMENTI WEST STREET 1<br><b>Distance:</b> 873.4442931806043 m</div>`)[0];
+                popup_e6a751b1de57e439fb01d4a9dad0dcd3.setContent(html_39fb0d04039afd77d8e2f2be1fd1df02);
+            
+        
+
+        marker_3b476823d1de4668955b18f3ba42b377.bindPopup(popup_e6a751b1de57e439fb01d4a9dad0dcd3)
+        ;
+
+        
+    
+    
+            var marker_a4e3c9857de5897f7181a960dc2f0e07 = L.marker(
+                [1.3098135876330488, 103.77013103455867],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_7ee5e4d3577cbfdd03e17f649aaba767 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4e3c9857de5897f7181a960dc2f0e07.setIcon(icon_7ee5e4d3577cbfdd03e17f649aaba767);
+        
+    
+        var popup_b08e03c13920d97af951a95360098685 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f80f40f92ed2642d932ab8b8832d6652 = $(`<div id="html_f80f40f92ed2642d932ab8b8832d6652" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> C3M<br><b>Address:</b> BLK 416A CLEMENTI AVENUE 1<br><b>Distance:</b> 921.6100747422024 m</div>`)[0];
+                popup_b08e03c13920d97af951a95360098685.setContent(html_f80f40f92ed2642d932ab8b8832d6652);
+            
+        
+
+        marker_a4e3c9857de5897f7181a960dc2f0e07.bindPopup(popup_b08e03c13920d97af951a95360098685)
+        ;
+
+        
+    
+    
+            var marker_3bc389fbd70361bb4faea661edbae28e = L.marker(
+                [1.3047388928304149, 103.78167448932463],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_646e26116fd366a5915878f139976e55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3bc389fbd70361bb4faea661edbae28e.setIcon(icon_646e26116fd366a5915878f139976e55);
+        
+    
+        var popup_f304ff40c298e748a8b25bbdb90fce7c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f4b82a0bfd4a6d2616885ebd91f5c3d4 = $(`<div id="html_f4b82a0bfd4a6d2616885ebd91f5c3d4" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> AR2M<br><b>Address:</b> BLK 28 DOVER CRESCENT<br><b>Distance:</b> 924.2203252578001 m</div>`)[0];
+                popup_f304ff40c298e748a8b25bbdb90fce7c.setContent(html_f4b82a0bfd4a6d2616885ebd91f5c3d4);
+            
+        
+
+        marker_3bc389fbd70361bb4faea661edbae28e.bindPopup(popup_f304ff40c298e748a8b25bbdb90fce7c)
+        ;
+
+        
+    
+    
+            var marker_8db12f519d358b082fdb9e8956ef7b56 = L.marker(
+                [1.3114801086975776, 103.7705025129515],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_bae0934cec6fecb23fad296e905441a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8db12f519d358b082fdb9e8956ef7b56.setIcon(icon_bae0934cec6fecb23fad296e905441a1);
+        
+    
+        var popup_930735c4310f8cd1f8ec21e68370db95 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c2c273dd3ad7ff975e1ebeceaa00d580 = $(`<div id="html_c2c273dd3ad7ff975e1ebeceaa00d580" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> C4M<br><b>Address:</b> BLK 413A COMMONWEALTH AVENUE WEST<br><b>Distance:</b> 1064.537774742199 m</div>`)[0];
+                popup_930735c4310f8cd1f8ec21e68370db95.setContent(html_c2c273dd3ad7ff975e1ebeceaa00d580);
+            
+        
+
+        marker_8db12f519d358b082fdb9e8956ef7b56.bindPopup(popup_930735c4310f8cd1f8ec21e68370db95)
+        ;
+
+        
+    
+    
+            var marker_d7d18fb9797475929bb9059aefcf6ca9 = L.marker(
+                [1.305309674521169, 103.76355742121356],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_43d8e867474723b1e25fe45680550e3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7d18fb9797475929bb9059aefcf6ca9.setIcon(icon_43d8e867474723b1e25fe45680550e3c);
+        
+    
+        var popup_fdf1dea86f40e917523c30f0203c87a5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ebaf84d67f8a78ba9cc1a8064b94823b = $(`<div id="html_ebaf84d67f8a78ba9cc1a8064b94823b" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> C36<br><b>Address:</b> BLK 728/729 CLEMENTI WEST STREET 2<br><b>Distance:</b> 1157.756593180602 m</div>`)[0];
+                popup_fdf1dea86f40e917523c30f0203c87a5.setContent(html_ebaf84d67f8a78ba9cc1a8064b94823b);
+            
+        
+
+        marker_d7d18fb9797475929bb9059aefcf6ca9.bindPopup(popup_fdf1dea86f40e917523c30f0203c87a5)
+        ;
+
+        
+    
+    
+            var marker_41a155d699ae05a4a328286ab5589ba1 = L.marker(
+                [1.3072843627095663, 103.78343964059528],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_3700766e723f83ee319053a47165b2fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41a155d699ae05a4a328286ab5589ba1.setIcon(icon_3700766e723f83ee319053a47165b2fd);
+        
+    
+        var popup_54b617220e2bf5971cf61ea79276f123 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_24ccee4346ddbf7cb44f3c8fec3f545f = $(`<div id="html_24ccee4346ddbf7cb44f3c8fec3f545f" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> AR9<br><b>Address:</b> BLK 20/22/23 DOVER CRESCENT<br><b>Distance:</b> 1273.2553068193993 m</div>`)[0];
+                popup_54b617220e2bf5971cf61ea79276f123.setContent(html_24ccee4346ddbf7cb44f3c8fec3f545f);
+            
+        
+
+        marker_41a155d699ae05a4a328286ab5589ba1.bindPopup(popup_54b617220e2bf5971cf61ea79276f123)
+        ;
+
+        
+    
+    
+            var marker_10b4b03f056b99f1a7610f4c81327432 = L.marker(
+                [1.3109282161791282, 103.7678805968389],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_0d37238da85100ab4f175989d524dec0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_10b4b03f056b99f1a7610f4c81327432.setIcon(icon_0d37238da85100ab4f175989d524dec0);
+        
+    
+        var popup_d013a5cc4bb227ea4f224f258ae7baf4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b4f59dc85650ef1917a7272837230db2 = $(`<div id="html_b4f59dc85650ef1917a7272837230db2" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> C2M<br><b>Address:</b> BLK 463 CLEMENTI AVENUE 1<br><b>Distance:</b> 1295.3159747421996 m</div>`)[0];
+                popup_d013a5cc4bb227ea4f224f258ae7baf4.setContent(html_b4f59dc85650ef1917a7272837230db2);
+            
+        
+
+        marker_10b4b03f056b99f1a7610f4c81327432.bindPopup(popup_d013a5cc4bb227ea4f224f258ae7baf4)
+        ;
+
+        
+    
+    
+            var marker_39a9b06afb465f8f2561f584ad465603 = L.marker(
+                [1.3035383171263133, 103.76397169772963],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_36f60813883d3b0a3ec47ac318b77c29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39a9b06afb465f8f2561f584ad465603.setIcon(icon_36f60813883d3b0a3ec47ac318b77c29);
+        
+    
+        var popup_cf861ad3f2708e22c4776ca8794c67ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e136badfda9d248031b86a9723c4d447 = $(`<div id="html_e136badfda9d248031b86a9723c4d447" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> C37<br><b>Address:</b> BLK 720-727,730-731 CLEMENTI WEST STREET 2<br><b>Distance:</b> 1307.5257931806009 m</div>`)[0];
+                popup_cf861ad3f2708e22c4776ca8794c67ee.setContent(html_e136badfda9d248031b86a9723c4d447);
+            
+        
+
+        marker_39a9b06afb465f8f2561f584ad465603.bindPopup(popup_cf861ad3f2708e22c4776ca8794c67ee)
+        ;
+
+        
+    
+    
+            var marker_d9d971428978cb23c820b9c40c60d875 = L.marker(
+                [1.3047713772680545, 103.78519200383877],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_e0fa56b6f19cd5f0f11d13221b899747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d9d971428978cb23c820b9c40c60d875.setIcon(icon_e0fa56b6f19cd5f0f11d13221b899747);
+        
+    
+        var popup_04fd972d939ec489ccc6bf059026abeb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8142e1361517dc52553083446ef3c1f4 = $(`<div id="html_8142e1361517dc52553083446ef3c1f4" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> AR7M<br><b>Address:</b> BLK 12A DOVER CLOSE EAST<br><b>Distance:</b> 1312.1034252578029 m</div>`)[0];
+                popup_04fd972d939ec489ccc6bf059026abeb.setContent(html_8142e1361517dc52553083446ef3c1f4);
+            
+        
+
+        marker_d9d971428978cb23c820b9c40c60d875.bindPopup(popup_04fd972d939ec489ccc6bf059026abeb)
+        ;
+
+        
+    
+    
+            var marker_09564c69d77a6472639e915f39326dda = L.marker(
+                [1.3131026590525159, 103.76957394864701],
+                {}
+            ).addTo(map_67a3aa11dbdd258560a6bf9762daacf4);
+        
+    
+            var icon_15040823ae8996fab5d0b9a24ab54b06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09564c69d77a6472639e915f39326dda.setIcon(icon_15040823ae8996fab5d0b9a24ab54b06);
+        
+    
+        var popup_c99257127a4d870977c22c277c20b401 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83f6c5665ee8cca5585d052f8ad79aaf = $(`<div id="html_83f6c5665ee8cca5585d052f8ad79aaf" style="width: 100.0%; height: 100.0%;"><b>Car Park:</b> C5<br><b>Address:</b> BLK 358-360,362-363,366-367 CLEMENTI AVENUE 2<br><b>Distance:</b> 1347.289674742202 m</div>`)[0];
+                popup_c99257127a4d870977c22c277c20b401.setContent(html_83f6c5665ee8cca5585d052f8ad79aaf);
+            
+        
+
+        marker_09564c69d77a6472639e915f39326dda.bindPopup(popup_c99257127a4d870977c22c277c20b401)
+        ;
+
+        
+    
+</script>
+</html>
